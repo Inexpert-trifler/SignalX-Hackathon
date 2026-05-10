@@ -7,7 +7,8 @@
     "dev": "next dev frontend",
     "build": "next build frontend",
     "start": "next start frontend",
-    "lint": "next lint frontend"
+    "lint": "next lint frontend",
+    "vercel-build": "cd frontend && npm run build"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
