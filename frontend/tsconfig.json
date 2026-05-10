@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -23,7 +24,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@backend/*": ["../backend/*"]
+      "@backend/*": ["./backend/*"]
     },
     "target": "ES2017"
   },
@@ -31,9 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "../backend/**/*.ts",
-    "../backend/**/*.tsx"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

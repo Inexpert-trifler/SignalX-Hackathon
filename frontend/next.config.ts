@@ -1,14 +1,5 @@
 import path from "node:path";
 import type { NextConfig } from "next";
-import { loadEnvConfig } from "@next/env";
-
-const projectDir = process.cwd();
-const workspaceRoot = path.resolve(projectDir, "..");
-
-loadEnvConfig(projectDir);
-if (workspaceRoot !== projectDir) {
-  loadEnvConfig(workspaceRoot);
-}
 
 const nextConfig: NextConfig = {
   images: {
@@ -20,11 +11,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    externalDir: true,
-    serverActions: {
-      allowedOrigins: ["localhost:3000"],
-    },
+  outputFileTracingRoot: path.resolve(__dirname, ".."),
+  webpack(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": path.resolve(__dirname),
+      "@backend": path.resolve(__dirname, "./backend"),
+    };
+    return config;
   },
 };
 
