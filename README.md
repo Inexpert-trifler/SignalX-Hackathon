@@ -1,151 +1,176 @@
-# ⚡ SignalX AI — Startup Intelligence Platform
+# 🚀 SignalX AI — Autonomous Startup Intelligence Engine
 
-> AI-powered startup analysis powered by **Anakin APIs** and **Gemini AI**.
-> Crawl any company → Extract intelligence → Discover market gaps in seconds.
+<div align="center">
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org)
-[![Tailwind](https://img.shields.io/badge/TailwindCSS-3-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
-[![Gemini](https://img.shields.io/badge/Gemini-AI-4285f4?logo=google)](https://ai.google.dev)
+![SignalX Banner](https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif)
 
----
+### ⚡ Turning the Internet into Real-Time Startup Intelligence
 
-## 🚀 Features
+### 🌐 Live Demo
+# 🔗 https://signal-x-hackathon.vercel.app/
 
-| Feature | Description |
-|---|---|
-| 🌐 **Deep Web Crawling** | Anakin APIs crawl homepage, pricing, docs, features & blogs |
-| 🤖 **Gemini AI Analysis** | Google Gemini extracts ICP, competitors, market gaps |
-| 🏆 **Competitor Intelligence** | Side-by-side feature comparison with similarity scores |
-| 💰 **Pricing Intelligence** | Decode competitor pricing models and strategies |
-| 🎯 **Market Gap Detection** | AI surfaces ranked market opportunities |
-| 📊 **Trend Analysis** | Visual trend charts across topics |
-| 📄 **Export Reports** | Export as JSON or Markdown |
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Anakin-AI-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Gemini-AI-4285F4?style=for-the-badge&logo=google" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
+</p>
 
----
+<p align="center">
+  <b>🏆 Built for Build With Anakin Mini Hackathon</b>
+</p>
 
-## 🏗️ Tech Stack
-
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS + Framer Motion
-- **AI**: Google Gemini 1.5 Flash
-- **Crawling/Scraping**: Anakin APIs (critical execution path)
-- **Database**: Supabase (optional)
-- **Charts**: Recharts
+</div>
 
 ---
 
-## ⚡ Quick Start
+# 🌌 What is SignalX AI?
 
-### 1. Clone & Install
-```bash
-git clone <repo>
-cd signalx-ai
-npm install
-```
+SignalX AI is a next-generation AI-powered startup intelligence platform that autonomously crawls websites, extracts structured business data, analyzes competitors, detects market gaps, and generates actionable AI-driven startup insights.
 
-### 2. Configure Environment
-```bash
-cp .env.example .env.local
-```
+Instead of manually researching:
 
-Edit `.env.local`:
-```env
-ANAKIN_API_KEY=your_anakin_api_key
-GEMINI_API_KEY=your_gemini_api_key
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url       # optional
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key  # optional
-SUPABASE_SERVICE_ROLE_KEY=your_service_key       # optional, needed to insert records
-```
+- startup websites
+- pricing pages
+- feature sets
+- market trends
+- competitors
+- positioning
+- growth signals
 
-> **Note:** If you want to use Supabase, run the SQL commands found in `supabase/schema.sql` in your Supabase SQL editor to create the necessary tables and policies.
-
-### 3. Run
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
+SignalX AI automates the ENTIRE workflow.
 
 ---
 
-## 📁 Project Structure
+# 🎥 Live Product Demo
 
-```
-signalx-ai/
-├── app/
-│   ├── page.tsx                    # Landing page
-│   ├── dashboard/page.tsx          # Dashboard
-│   ├── analyze/page.tsx            # Analysis results
-│   └── api/
-│       ├── analyze/route.ts        # Main analysis endpoint
-│       ├── crawl/route.ts          # Anakin crawl endpoint
-│       └── scrape/route.ts         # Anakin scrape endpoint
-├── components/
-│   ├── dashboard/                  # Dashboard UI components
-│   └── ui/                         # Reusable UI primitives
-├── lib/
-│   ├── anakin/                     # Anakin API integration
-│   │   ├── client.ts               # HTTP client
-│   │   ├── crawl.ts                # crawlWebsite()
-│   │   └── scrape.ts               # scrapeUrl(), browserSessionScrape()
-│   ├── ai/gemini.ts                # Gemini AI analysis
-│   └── supabase/client.ts          # Supabase client
-├── hooks/useAnalysis.ts            # Analysis state hook
-├── services/export.ts              # Export to JSON/Markdown
-└── types/index.ts                  # TypeScript types
-```
+## 🌍 Frontend
+# 🔗 https://signal-x-hackathon.vercel.app/
 
 ---
 
-## 🔌 Anakin API Integration
+# 🧠 Core Idea
 
-Anakin APIs are in the **critical execution path**:
+Modern startup research is:
 
-```typescript
-// lib/anakin/crawl.ts
-export async function crawlWebsite(url: string): Promise<AnakinCrawlPage[]>
+❌ fragmented  
+❌ slow  
+❌ repetitive  
+❌ manually intensive  
+❌ difficult to scale  
 
-// lib/anakin/scrape.ts
-export async function scrapeUrl(url: string): Promise<AnakinScrapeResponse>
-export async function browserSessionScrape(url: string): Promise<AnakinScrapeResponse>
-export async function extractStructuredData(url: string): Promise<AnakinScrapeResponse>
-```
+SignalX AI transforms the chaotic internet into:
 
-All requests use:
-```
-Authorization: Bearer process.env.ANAKIN_API_KEY
-```
-
----
-
-## 🤖 Analysis Pipeline
-
-```
-User enters URL
-    ↓
-Anakin Crawl API → crawls 5-10 pages
-    ↓
-Anakin Scrape API → extracts markdown content
-    ↓
-Gemini AI → analyzes all content
-    ↓
-Returns: startup profile, ICP, competitors,
-         pricing analysis, market gaps,
-         opportunity score, actionable insights
-```
+✅ Structured Intelligence  
+✅ Market Insights  
+✅ Competitor Benchmarking  
+✅ AI Opportunity Detection  
+✅ Real-Time Startup Analytics  
 
 ---
 
-## 🎯 Mock Fallback
+# ⚡ Why This Project Matters
 
-The app works **without API keys** using intelligent mock data. Perfect for demos.
+The startup ecosystem moves insanely fast.
+
+Founders, builders, investors, and researchers constantly need to:
+
+- monitor competitors
+- understand pricing models
+- analyze startup positioning
+- track trends
+- identify market opportunities
+- benchmark products
+
+Doing this manually is painful.
+
+SignalX AI automates this entire intelligence workflow.
 
 ---
 
-## 🏆 Hackathon Info
+# 🔥 Core Features
 
-**Project**: SignalX AI
-**Category**: AI Infrastructure / Startup Intelligence
-**Stack**: Anakin APIs · Gemini AI · Next.js 15
+# 🕷️ Autonomous Website Crawling
+- Crawl startup websites
+- Extract structured content
+- Parse product pages
+- Detect pricing models
+- Extract features automatically
+- Convert messy data into structured intelligence
+
+---
+
+# 🤖 AI-Powered Intelligence Engine
+- Competitor analysis
+- Market positioning
+- Feature comparison
+- AI summaries
+- Opportunity scoring
+- Market gap detection
+
+---
+
+# 📊 Analytics Dashboard
+- Interactive charts
+- AI confidence indicators
+- Growth analytics
+- Opportunity visualization
+- Startup intelligence widgets
+
+---
+
+# 🧩 Competitor Intelligence
+- Feature benchmarking
+- Pricing comparison
+- Product overlap detection
+- Competitive landscape mapping
+
+---
+
+# 📈 Trend Detection Engine
+- Startup trend analysis
+- Emerging category detection
+- AI market signals
+- Product evolution tracking
+
+---
+
+# 📄 AI Reports
+- Structured reports
+- Markdown exports
+- JSON intelligence exports
+- AI-generated summaries
+
+---
+
+# 🌗 Premium UI/UX
+- Dark & Light mode
+- Animated dashboard
+- Glassmorphism design
+- anakin.io inspired aesthetic
+- Fully responsive
+- AI-native UI system
+
+---
+
+# 🏗️ System Architecture
+
+```mermaid
+graph TD
+
+A[Frontend Dashboard] --> B[Backend API Layer]
+B --> C[Anakin APIs]
+B --> D[Gemini AI]
+B --> E[Supabase Database]
+
+C --> F[Structured Crawl Data]
+D --> G[AI Intelligence Layer]
+
+F --> H[Market Intelligence]
+G --> H
+
+H --> I[Analytics Dashboard]
