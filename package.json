@@ -4,10 +4,10 @@
   "description": "AI-powered startup intelligence platform",
   "private": true,
   "scripts": {
-    "dev": "next dev frontend",
-    "build": "next build frontend",
-    "start": "next start frontend",
-    "lint": "next lint frontend",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint",
     "vercel-build": "cd frontend && npm run build"
   },
   "dependencies": {
@@ -30,7 +30,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.454.0",
-    "next": "^15.3.2",
+    "next": "^15.5.18",
     "next-themes": "^0.4.6",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
