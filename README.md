@@ -12,6 +12,7 @@ https://signal-x-hackathon.vercel.app/
 
 ## ✨ Overview
 
+
 SignalX AI is an AI-powered startup intelligence platform that autonomously crawls websites, extracts structured business data, analyzes competitors, identifies market gaps, and generates actionable startup insights.
 
 Built using:
